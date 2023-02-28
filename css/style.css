@@ -1,0 +1,86 @@
+/* var */
+:root{
+    --bg-light: #fff;
+    --bg-dark:#3e3e3e;
+    --font-color-theme-light: #3e3e3e;
+    --font-color-theme-dark: #fff;
+    --border-theme-light: #ccc;
+}
+
+/* general */
+*{
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* container */
+.container{
+    height: 100vh;
+    width: 100vw;
+    color: var(--font-color-theme-light);
+  
+}
+
+/* content */
+.content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* body */
+body{
+    transition: 1s;
+}
+
+.dark {
+    background-color: var(--bg-dark);
+    color: var(--font-color-theme-dark);
+    border-color: #ccc;
+}
+
+.dark #theme{
+    color: var(--font-color-theme-dark);
+}
+
+.dark #clock{
+    border: 1px solid white;
+    color: var(--font-color-theme-dark);
+}
+
+/* clock */
+#clock {
+    font-size: 175px;
+    width: 900px;
+    text-align: center;
+    border: 2px solid var(--font-color-theme-light);
+    border-radius: 20px;
+}
+
+/* theme */
+#theme{
+    position:absolute;
+    height:70px;
+    width:70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--border-theme-light);
+    border-radius: 3px;
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#theme img{
+   margin-top:3px;
+   width: 40px;
+   height: 40px;    
+}
+
+#theme p{
+   margin-top: 5px;   
+}
